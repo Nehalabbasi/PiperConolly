@@ -1,0 +1,2148 @@
+/* Icons */
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+/* Fonts */
+/* @import url(../fonts/adelia/stylesheet.css); */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.cdnfonts.com/css/adelia-free");
+@import url("https://fonts.cdnfonts.com/css/eu-alonira");
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* @font-face {
+  font-family: "adelia";
+  src: url("fonts/adelia/adelia.eot");
+  src: url("fonts/adelia_3/adelia.eot?#iefix") format("embedded-opentype"),
+    url("fonts/adelia.woff2") format("woff2"),
+    url("fonts/adelia_3/.woff") format("woff"),
+    url("fonts/adelia_3/adelia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "adelia";
+  src: url("..fonts/adelia_3/adelia_1.eot");
+  src: url("..fonts/adelia_3/adelia_1.eot?#iefix") format("embedded-opentype"),
+    url("..fonts/adelia_3/adelia_1.woff2") format("woff2"),
+    url("..fonts/adelia_3/adelia_1.woff") format("woff"),
+    url("..fonts/adelia_3/adelia_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #fff;
+  background: black;
+}
+a {
+  display: inline-block;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+a:hover,
+a.active {
+  color: var(--color-primary);
+}
+i[class^="bx"] {
+  vertical-align: middle;
+}
+ul,
+address {
+  margin-bottom: 0;
+}
+.imgFluid {
+  max-width: 100%;
+}
+.primary-color {
+  color: var(--color-primary);
+}
+.section-content .subHeading {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.section-content .heading {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section-content p {
+  color: #666;
+  line-height: 2;
+}
+.section-content span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.themeBtn {
+  width: fit-content;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #000;
+  padding: 0.75rem 2rem;
+  margin: 0.25rem 0;
+  transition: all 300ms ease-in-out;
+}
+.themeBtn--full {
+  width: 100%;
+}
+.themeBtn--center {
+  margin: 0.25rem auto;
+}
+.themeBtn:hover {
+  color: #fff;
+  background: var(--color-primary);
+  border-color: #fff;
+  transform: translateY(-5px);
+}
+
+/******** Header CSS Start *********/
+
+header.header_main {
+  background: transparent;
+  padding: 20px 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.header-logo a {
+  display: inline-block;
+  padding: 15px 0 0 0;
+  width: 100% !important;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav ul li a {
+  font-family: "Fondamento";
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: none;
+  color: black;
+  text-align: center;
+}
+
+.header-end ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  gap: 5px;
+  height: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+.header-end ul li a {
+  position: relative;
+  color: black;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 41px;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin: 5px;
+  text-align: center;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  border: 1px solid #e48cbf;
+}
+.header-end ul li a:hover {
+  color: #e48cbf;
+  background: transparent;
+}
+.header-logo img {
+  width: 88%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header-end {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+/******** Header CSS End *********/
+
+/******** Home Page CSS Start *********/
+.home_first_banner {
+  background: url(../images/home-banner-background.jpg);
+  height: 123vh;
+  width: 100%;
+  padding: 0px 0px;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  display: flex;
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+/* .home_first_banner::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  background-image: linear-gradient(
+    113.28deg,
+    rgba(150, 111, 214, 0.83) -1.65%,
+    rgba(255, 142, 195, 0.83) 49.56%,
+    rgba(64, 225, 209, 0.83) 102.86%
+  );
+  height: 100%;
+  width: 100%;
+  top: 0;
+  animation-name: homelayer;
+  animation-duration: 4s;
+} */
+
+/* .home_first_banner::before {
+  position: absolute;
+  content: "";
+  background: transparent;
+  background-image: linear-gradient(
+    113.28deg,
+    rgba(150, 111, 214, 0.83) -1.65%,
+    rgba(255, 142, 195, 0.83) 49.56%,
+    rgba(64, 225, 209, 0.83) 102.86%
+  );
+  animation-name: background2;
+  animation-duration: 4s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+@keyframes background2 {
+  0% {
+    background-image: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  25% {
+    background-image: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+  50% {
+    background-image: rgba(64, 225, 209, 0.83) 102.86%;
+  }
+  75% {
+    background-image: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  100% {
+    background-image: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+} */
+
+/* @keyframes homelayer {
+  0% {
+    background-color: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  25% {
+    background-color: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+  50% {
+    background-color: rgba(64, 225, 209, 0.83) 102.86%;
+  }
+  75% {
+    background-color: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  100% {
+    background-color: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+} */
+
+.home-banner-image img {
+  width: 100%;
+  filter: drop-shadow(10px 0px 9px rgba(0, 0, 0, 0.25));
+}
+
+.home-banner-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.home-banner-txt h2 {
+  font-family: "Eu Alonira";
+  text-transform: capitalize;
+  line-height: 248px;
+  font-weight: 400;
+  font-size: 70px;
+  margin: 0;
+  background: linear-gradient(294deg, #68444a -9.96%, #fa3859 135.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-banner-txt P {
+  line-height: 28px;
+  color: #cd3d2c;
+  -webkit-text-stroke: 1px #5c140c;
+  text-stroke: 4px navy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 82px;
+  font-family: "Adelia FREE", sans-serif;
+}
+.home-second-img img {
+  width: 100%;
+  padding: 10px;
+}
+
+.home-second-banner {
+  padding: 50px 0px;
+}
+.home-second-txt h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "adelia free";
+  font-size: 52px;
+  line-height: 22px;
+  /* identical to box height, or 73% */
+  color: #cd3d2c;
+}
+
+.home-second-txt h2 {
+  color: #2b2b2b;
+  font-family: "Eu Alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 72px;
+  padding: 10px 0px 20px 0px;
+}
+.home-second-txt P {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.home-second-txt span {
+  display: block;
+}
+
+.theme-btn {
+  background: #1e1e1e;
+  border-radius: 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  padding: 18px 24px;
+  position: relative;
+  margin: 40px 0 0 0;
+  width: auto;
+  text-transform: uppercase;
+  transition: all 0.6s ease;
+}
+.theme-btn:hover {
+  transition: all 0.6s ease;
+  background: transparent;
+  color: white;
+  transform: translatey(-12px);
+}
+
+.theme-btn::before {
+  position: absolute;
+  content: "";
+  background: rgba(2, 2, 2, 0.6);
+  filter: blur(10.5px);
+  bottom: -6px;
+  transition: all 0.6s ease;
+  z-index: -4;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  border-radius: 100%;
+}
+h2.sec_title {
+  top: 320px;
+  position: absolute;
+  right: -14%;
+  font-family: "eu alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 82px;
+  /* or 76% */
+  letter-spacing: 17.18px;
+  text-transform: uppercase;
+  color: rgb(255 132 163 / 40%);
+  transform: rotate(90deg);
+}
+p.extra-txt {
+  font-family: "Alike Angular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  text-transform: capitalize;
+  color: #898989;
+  margin: 40px 0px 0px 0px;
+}
+
+.home-second-txt {
+  padding: 20px 0px 0px 0px;
+}
+
+.home-third-txt {
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+
+section.home-third-banner {
+  padding: 80px 0px;
+}
+
+.home-third-txt h4 {
+  font-size: 147px;
+  position: absolute;
+  color: rgb(166 166 166 / 54%);
+  font-family: "Abril Fatface", cursive;
+  top: -31px;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.home-third-txt h3 {
+  font-family: "adelia free";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: rgba(205, 61, 44, 1);
+  margin: 20px 0 0 0;
+}
+
+.home-third-txt h2 {
+  font-family: "eu alonira";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: lowercase;
+  color: #323232;
+}
+
+.home-third-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+  padding: 20px 0 0 0;
+}
+
+.home-third-img img {
+  width: 100%;
+  transition: all 0.6s ease;
+}
+.img-banner-abslt img {
+  width: 122px;
+}
+
+.home-third-img {
+  position: relative;
+  margin: 0px 0px 50px 0px;
+  overflow: hidden;
+}
+
+.img-banner-abslt {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.img-banner-abslt h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+.movie-slider-img img {
+  width: 100%;
+}
+.movie-slider-img:hover span {
+  color: black;
+}
+.movie-slider-img span {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.6s ease;
+  top: 29%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  color: #ffffffab;
+  z-index: 99999;
+  font-size: 46px;
+}
+
+.movie-slider-img:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+}
+
+.movie-slider-img {
+  position: relative;
+}
+.movie-slider .slick-track {
+  height: 130px;
+}
+
+.home-third-banner {
+  text-align: center;
+}
+.biography-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+section.biography {
+  padding: 60px 0px 120px 0px;
+  position: relative;
+}
+.biography-txt a.theme-btn {
+  margin: 17px 0 0 0;
+  width: 270px;
+}
+
+.biography-txt h3 {
+  font-family: "Adelia FREE", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  color: #cd3d2c;
+  line-height: 22px;
+}
+
+.biography-txt h2 {
+  font-family: "eu alonira";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #323232;
+  padding: 10px 0 0 0;
+}
+
+.biography-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 15px 0 25px 0;
+  color: #717070;
+}
+
+.events_title h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  padding: 0px 0px 5px 0px;
+}
+
+.events_title h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #313030;
+  margin: 0;
+}
+
+.events_title {
+  width: 100%;
+  padding: 20px 0px 30px 0px;
+}
+
+.events_title a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ff84a3;
+  text-decoration: underline !important;
+  position: relative;
+}
+
+.upcoming-event-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #ff8ec3;
+}
+
+.upcoming-event-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.18125px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.upcoming-event-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+section.upcoming-event {
+  padding: 90px 0px 50px 0px;
+}
+
+.event_img img {
+  width: 100%;
+  transition: all 0.6s ease;
+}
+
+.event_img {
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0px 0px 0px;
+}
+
+.event_img img:hover {
+  transform: scale(1.2);
+}
+
+.events_title a::before {
+  position: absolute;
+  content: "";
+  background: #ff84a3;
+  height: 0px;
+  width: 93px;
+  z-index: -1;
+  bottom: 6px;
+  left: 0;
+  transition: all 0.6s ease;
+}
+
+.events_title a:hover:before {
+  height: 20px;
+}
+
+.events_title a:hover {
+  color: white;
+  text-decoration: none !important;
+}
+
+h5.txt-inner-img {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.11;
+  position: absolute;
+  z-index: -1;
+  bottom: 155px;
+  left: 40px;
+}
+
+.follow-athena-txt {
+  text-align: center;
+}
+
+.follow-athena-txt h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "adelia free";
+  font-size: 52px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #cd3d2c;
+}
+
+.follow-athena-txt h2 {
+  font-family: "eu alonira";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 66px;
+  text-transform: lowercase;
+  color: #2d2d2d;
+}
+
+.follow-athena-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+  padding: 0px 0px 20px 0px;
+}
+
+.follow-athena-txt h1 {
+  transition: all 0.3s ease-in-out;
+  font-family: "Oswald";
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+}
+
+p.follow-para-two {
+  font-family: "Alike Angular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #898989;
+  padding: 30px 0px 0px 0px;
+}
+
+.follow-athena-park {
+  padding: 110px 0px 100px 0px;
+}
+
+.latest-album-txt {
+  text-align: center;
+}
+
+.other-companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0px 50px 0px;
+}
+
+.latest-album-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.latest-album-txt h2 {
+  font-family: "Eu Alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 66px;
+  text-transform: capitalize;
+  color: #ffff;
+}
+
+.latest-album {
+  background: url(../images/latest-album.png);
+  padding: 50px 0px;
+}
+
+.latest-album-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.music-player {
+  padding: 20px;
+  text-align: center;
+  background: #141414;
+  border-radius: 10px;
+}
+
+.music-img img {
+  width: 100%;
+}
+
+.music-player p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 20px 0px 5px 0px;
+}
+
+.refresh-btn {
+  color: #fff;
+  font-size: 30px;
+}
+
+.previous-btn {
+  border: 1px solid #ff8ec3;
+  border-radius: 40px;
+  padding: 10px 16px;
+  color: #ff8ec3;
+  font-size: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.music-playerbtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.play-btn {
+  opacity: 1;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 15px 20px;
+  color: white;
+  border: 5px solid grey;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0.03%,
+    rgba(255, 255, 255, 0.07) 6.03%,
+    rgba(255, 255, 255, 0.56) 53.02%,
+    rgba(255, 255, 255, 0.88) 85%,
+    #ffffff 100%
+  );
+}
+
+.shuffle-btn {
+  font-size: 20px;
+  color: #fff;
+}
+
+.previous-btn:hover {
+  background: #ff8ec3;
+  color: black;
+}
+
+.refresh-btn:hover {
+  color: white;
+}
+
+.shuffle-btn:hover {
+  color: white;
+}
+
+.music-player h6 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+  padding: 20px 0px 0px 0px;
+  margin: 0;
+}
+
+.duration input[type="range"] {
+  width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  border-radius: 15px;
+  background: white;
+  margin: 10px 0px;
+}
+.range-slider .progress {
+  position: absolute;
+  left: 0;
+  right: 0%;
+  height: 100%;
+  border-radius: 15px;
+  background: transparent linear-gradient(90deg, #e4e7c1 0%, #d39892 100%) 0% 0%
+    no-repeat padding-box;
+}
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  left: 0;
+  pointer-events: none;
+  background: none;
+  outline: none;
+}
+.range-slider .range-min::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  width: 50px;
+  height: 12px;
+  background: #ff8ec3;
+  border-radius: 15px;
+  opacity: 1;
+  left: 0;
+}
+
+span.range-min-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.next-song p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 62px;
+  /* identical to box height, or 388% */
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+.next-song-player {
+  display: flex;
+  width: 100%;
+  background: #232323;
+  margin: 10px 0px 20px 0px;
+}
+
+.next-song {
+  width: 100%;
+  padding: 0px 0px 0px 20px;
+  border-radius: 0px 0px 11px 0px;
+}
+
+.play-pausebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 10px 10px 10px;
+}
+
+div#track-time {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.park-interview-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.park-interview-txt {
+  text-align: center;
+}
+
+.park-interview-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.park-interview-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+/******** Home Page CSS End *********/
+
+/******** Footer CSS Start *********/
+.footer-logo img {
+  width: 44%;
+  cursor: pointer;
+  object-fit: cover;
+}
+footer.footer-main {
+  background: url(../images/footer-background.png);
+  padding: 30px 0px 0px 0px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  height: 210px;
+  width: 100%;
+  justify-content: center;
+}
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav ul li a {
+  font-family: "Fondamento";
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.footer-nav {
+  padding: 30px 0px 20px 0px;
+  position: relative;
+}
+.footer-end ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+  height: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+.footer-end ul li a {
+  position: relative;
+  color: black;
+  font-size: 24px;
+  width: 70px;
+  z-index: 1;
+  border-radius: 100%;
+  text-align: center;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  border: 1px solid #e48cbf;
+  height: 70px;
+  line-height: 60px;
+  font-size: 38px;
+}
+.footer-end ul li a:hover {
+  color: #e48cbf;
+  background: transparent;
+}
+
+.footer-end {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 40px 0 10px 0;
+}
+.subscribe-input input {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 407px;
+  height: 53px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.subscribe-input {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 50px 0px 0px 0px;
+}
+.subscribe-input input:focus {
+  outline: none;
+}
+
+.subscribe-input p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  /* or 193% */
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+.footer-nav::before {
+  position: absolute;
+  content: "";
+  background: #979797;
+  width: 105%;
+  height: 1px;
+  right: -30px;
+  bottom: -15px;
+}
+.subscribe-input span {
+  cursor: pointer;
+  position: absolute;
+  background: linear-gradient(
+    113.28deg,
+    #966fd6 -1.65%,
+    #ff8ec3 49.56%,
+    #40e1d1 102.86%
+  );
+  color: black;
+  border-radius: 10px;
+  padding: 6px 34px;
+  transition: all 0.3s ease-in-out;
+  font-size: 26px;
+  top: 50px;
+  right: 0;
+  border: 1px solid white;
+}
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
+/* swiper-slider-css-begin */
+.video-slider .col-lg-4 {
+  padding: 0;
+  transition: all 0.6s ease;
+}
+
+.video-slider .slick-center .park-interview-img {
+  height: 330px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-slider .slick-center .park-interview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.park-interview-img {
+  display: flex;
+  height: 330px;
+  transition: all 0.6s ease;
+  align-items: center;
+}
+
+.park-interview-img span {
+  position: absolute;
+  cursor: pointer;
+  font-size: 80px;
+  color: #ed7dbecf;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.video-slider {
+  overflow: hidden;
+}
+
+.ct-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.park-interview-img span:hover {
+  color: #f98cc4;
+}
+
+.video-slider .slick-center .park-interview-img span {
+  opacity: 1;
+}
+
+/* swiper-slider-css-end */
+
+/* modifeid_css_begin */
+.theme-btn:hover:before {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: black;
+  filter: blur(0);
+  border-radius: 10px;
+  top: 0;
+}
+
+.footer-nav ul li a:before {
+  width: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  height: 2px;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  content: "";
+  bottom: -5px;
+}
+
+.footer-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.footer-nav ul li a:hover {
+  color: #e48cc3;
+}
+
+.footer-end ul li a::before {
+  width: 0;
+  transition: all 0.6s ease;
+  height: 0;
+  background: white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-end ul li a:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.follow-athena-txt h1:hover {
+  color: #ad2005 !important;
+}
+
+.subscribe-input span:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.follow-athena-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.follow-athena-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.follow-athena-img:hover img {
+  transform: scale(1.3);
+}
+header.header_main .container {
+  max-width: 1280px;
+}
+
+header.header_main .col-lg-6 {
+  padding: 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-nav ul li a::before {
+  width: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  height: 2px;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  content: "";
+  bottom: 0;
+}
+
+.header-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.header-nav ul li a:hover {
+  color: #ff8ec3;
+}
+
+.header-end ul li a:before {
+  width: 0;
+  transition: all 0.3s ease-in-out;
+  height: 0;
+  background: white;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.header-end ul li a:hover:before {
+  height: 90%;
+  width: 90%;
+}
+
+/* modifeid_css_begin */
+/******** Footer CSS End *********/
+
+/******** Biography Page CSS Start *********/
+
+.biography-banner {
+  background: url(../images/biography-banner-img.png);
+  height: 458px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.biography-banner::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    113.28deg,
+    rgba(150, 111, 214, 0.5) -1.65%,
+    rgba(255, 142, 195, 0.5) 49.56%,
+    rgba(64, 225, 209, 0.5) 102.86%
+  );
+  width: 100%;
+  height: 458px;
+}
+
+.biography-banner-txt {
+  padding: 170px 0px 0px 0px;
+  text-align: center;
+}
+
+.biography-banner-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #fbf2f2;
+  mix-blend-mode: normal;
+}
+.biography-banner-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 0px 50px 0px;
+}
+
+.biography-txts h6 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #cf7074;
+}
+
+.biography-sec {
+  padding: 100px 0px 50px 0px;
+  position: relative;
+}
+
+.biography-txts h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.biography-txts {
+  width: 100%;
+}
+.biography-txts p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.overview-txt {
+  background: #f2f1f1;
+  box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  z-index: 999999;
+  padding: 30px 20px 35px 20px;
+  margin: -60px -60px 0px 60px;
+  position: relative;
+}
+.biography-img {
+  width: 765px;
+  position: absolute;
+  height: 991px;
+  left: 0;
+  top: -160px;
+  border-radius: 60px;
+}
+
+.overview-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.overview-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 0;
+}
+
+.overview-txt p strong {
+  padding: 0px 20px 0px 0px;
+}
+
+.trivia-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.trivia-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+  margin: 0px 0px 30px 0px;
+}
+
+.subcribe {
+  padding: 70px 0px 120px 0px;
+}
+
+.subcribe-img img {
+  width: 100%;
+}
+
+.subcribe-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.subcribe-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.subcribe-txt p {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 38px;
+  color: #262626;
+  padding: 20px 0px 20px 0px;
+}
+
+.input-field input {
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #373737;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-field h6 {
+  background: linear-gradient(
+    113.28deg,
+    #966fd6 -1.65%,
+    #ff8ec3 49.56%,
+    #40e1d1 102.86%
+  );
+  border-radius: 7px;
+  padding: 17px 70px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  right: 3px;
+  transition: all 0.6s ease;
+}
+.input-field h6:hover {
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+}
+
+.subcribe-txt {
+  padding: 70px 0px 0px 0px;
+}
+
+.input-field input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #c5baba;
+}
+
+section.gallery {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.play-demo-img {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.play-demo-img img {
+  width: 80px;
+}
+
+.play-demo-img h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+
+.gallery-img img {
+  width: 100%;
+}
+
+.gallery-img img {
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  filter: drop-shadow(8px 11px 11px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.gallery h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.gallery h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.gallery p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+  padding: 0px 0px 30px 0px;
+}
+
+.simple-gal-img img {
+  width: 100%;
+  margin: 0px 0px 40px 0px;
+}
+
+.gallery-simple {
+  padding: 50px 0px;
+}
+
+.audio-player-sec {
+  padding: 50px 0px;
+}
+
+.audio-player {
+  background: url(../images/audio-player-banner.png);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.audio-player::before {
+  position: absolute;
+  content: "";
+  background: #141414;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.audio-img img {
+  width: 100%;
+  padding: 30px;
+}
+.audio-player-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.audio-player-txt {
+  padding: 110px 0px 40px 0px;
+}
+
+.audio-player-txt h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.audio-line {
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+
+.audio-line input {
+  width: 466px;
+}
+
+.athena-head h2 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.athena-head {
+  padding: 80px 0px 0px 0px;
+}
+
+.music-album-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.music-album-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #232323;
+  text-align: center;
+}
+
+.music-album-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+.music-album {
+  padding: 50px 0px;
+}
+
+.home-third-img img:hover {
+  transform: scale(1.2);
+}
+
+/* Tv_Show_css_begin */
+
+section.tv_show_sec {
+  padding: 0px 0 220px 0;
+  position: relative;
+}
+
+.tv_host {
+  width: 630px;
+  position: absolute;
+  height: 810px;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+}
+
+.tv_host img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tv_show_txt::before {
+  position: absolute;
+  content: "";
+  background: black;
+  opacity: 0.9;
+}
+
+.tv_show_txt {
+  background: url(../images/youtube-bg.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding: 32px 59px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 220px;
+  height: auto;
+  margin-bottom: auto;
+  overflow: hidden;
+  display: block;
+}
+
+.tv_show_txt h2 {
+  font-family: "Eu Alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 67px;
+  color: white;
+  text-transform: capitalize;
+  z-index: 9999;
+  position: relative;
+}
+
+.tv_show_txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 140% */
+  color: #d8d8d8;
+  z-index: 9999;
+  position: relative;
+}
+
+.tv_show_txt::before {
+  width: 100%;
+  top: 0;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0px;
+}
+
+.tv_show_txt h4 {
+  left: auto;
+  text-align: end;
+  right: 60px !important;
+  top: -2px;
+  font-size: 116px;
+}
+.tv_show_txt h3 {
+  font-family: "adelia free";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 22px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #cd3d2c;
+  z-index: 9999;
+  position: relative;
+}
+
+.home-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  position: relative;
+}
+
+a.theme-btn .theme-btn {
+  background: #cd3d2c !important;
+}
+
+.home-links a.theme-btn {
+  background: #c01e0a;
+  margin: 0;
+}
+
+.home-links a.theme-btn::before {
+  background: white !important;
+}
+
+.home-links a.theme-btn:hover {
+  color: black;
+}
+marquee.tag_yutb span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 210px;
+  line-height: 168px;
+  margin: 0 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(27, 27, 27, 0.1);
+}
+
+marquee.tag_yutb {
+  top: 35px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+/* Tv_Show_css_end */
+
+/* latest_show css begin*/
+
+.head-title {
+  text-align: center;
+  position: relative;
+  padding: 0 0 50px 0;
+}
+
+.head-title h3 {
+  font-family: "eu alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  z-index: 999999;
+  color: black;
+  position: relative;
+}
+
+.head-title h1 {
+  position: absolute;
+  z-index: -1;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 240px;
+  top: -68px;
+  line-height: 72px;
+  /* identical to box height, or 29% */
+  color: rgba(255, 132, 163, 0.1);
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.head-title h2 {
+  font-family: "Averes Title";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  z-index: 9;
+  text-transform: capitalize;
+  color: black;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+.head-title p {
+  width: 750px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding: 10px 0 30px 0;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 175% */
+  text-align: center;
+  color: #5e5e5e;
+}
+section.about-feature {
+  padding: 130px 0 90px 0;
+}
+
+.feature-about-txt h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #333;
+  padding: 0;
+}
+
+.feature-about-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 2px 0 0 0;
+}
+
+.about-feature-icon:hover {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+.about-feature-icon:hover img {
+  filter: brightness(0);
+}
+
+.about-feature-icon {
+  background: var(--primary-color);
+  transition: all 0.6s ease;
+  text-align: center;
+  display: flex;
+  border: 1px solid transparent;
+  font-size: 71px;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
+  height: 112px;
+  color: white;
+  border-radius: 13px;
+}
+
+.feature-about-txt {
+  padding: 10px;
+}
+.blog_main {
+  background: #eeeeee;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.blog_img img {
+  border-radius: 21px;
+  margin: 0 0 20px 0;
+}
+
+.blog_txt h2 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: #89011a;
+}
+.blog_txt {
+  padding: 0px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 251px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
